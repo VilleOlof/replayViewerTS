@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Replay Viewer TS</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="importmap"> {
+        "imports": {
+            "three": "../node_modules/three/build/three.module.js",
+            "orbitControls": "../node_modules/three/examples/jsm/controls/OrbitControls.js",
+            "gltfLoader": "../node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+            "class-transformer": "../node_modules/class-transformer/esm5/index.js",
+            "reflect-metadata": "../node_modules/reflect-metadata/Reflect.js"
+        } }
+    </script>
+
+    <script src="../node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="../build/config.js" type="module"></script>
+    <script src="../build/Other.js" type="module"></script>
+    <script src="../build/BackendInteraction.js" type="module"></script>
+    <script src="../build/ThreeHandler.js" type="module"></script>
+    <script src="../build/documentInteraction.js" type="module"></script>
+    <script src="../build/main.js" type="module"></script>
+</head>
+
+<body class="mainBody">
+    <canvas id="canvas" class="three_canvas"></canvas>
+
+    <!--Add input types for "plaform, limit, skip, level"-->
+
+    <div class="inputContainer">
+        <div class="input">
+            <label for="platform">Platform</label>
+            <select id="platform" name="platform">
+                <option value="Global">Global</option>
+                <option value="Steam">Steam</option>
+                <option value="Switch">Switch</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="limit">Limit</label>
+            <input type="number" id="limit" name="limit" min="1" max="100" value="10">
+        </div>
+        <div class="input">
+            <label for="skip">Skip</label>
+            <input type="number" id="skip" name="skip" min="0" max="100" value="0">
+        </div>
+        <div class="input">
+            <label for="level">Level</label>
+            <input type="string" id="level" name="level" value="Learning to Roll">
+        </div>
+    </div>
+
+    <div>
+        <table id="leaderboard">
+            <tr>
+              <th>Rank</th>
+              <th>Username</th>
+              <th>Time</th>
+            </tr>
+          </table>
+    </div>
+
+</body>
+
+</html>

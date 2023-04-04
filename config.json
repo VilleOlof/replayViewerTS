@@ -1,0 +1,16 @@
+{
+    "Debug": true,
+    "WriteDebugObjectAtStartup": true,
+
+    "transparentMaterials": ["IceCrystalGemMat"],
+
+    "server": "http://192.168.88.133:6969/resources/",
+    "skyboxPath": "skybox/?skybox={0}&orientation=",
+    "levelPath": "models/?platform={0}&level={1}",
+    "replayPath": "data/replays/?genericPlatform={0}&level={1}&platform={2}&fileIndex={3}",
+    "replayAmountPath": "data/replays/?returnFileAmount=true&genericPlatform={0}&level={1}",
+    "dataOtherPath": "data/other/?dataName={0}&file_extension={1}",
+
+    "LimitPerServerRequest": 500,
+    "AmountPerFile": 50
+}

@@ -1,0 +1,13 @@
+{
+  "name": "replay_viewer_ts",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "reflect-metadata": "^0.1.13",
+    "three": "^0.149.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.149.0"
+  }
+}
